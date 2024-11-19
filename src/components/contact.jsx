@@ -48,7 +48,7 @@ const contact = () => {
             <form onSubmit={handleSubmit} className="lg:w-[600px] md:w-[500px] mx-auto">
                 <div className="relative mt-5">
                     <input
-                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da]"
+                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da] text-black"
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -60,7 +60,7 @@ const contact = () => {
                 </div>
                 <div className="relative mt-5">
                     <input
-                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da]"
+                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da] text-black"
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -74,7 +74,7 @@ const contact = () => {
                     <textarea
                         cols="30"
                         rows="10"
-                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da]"
+                        className="block px-2 pb-2.5 pt-4 w-full text-sm bg-transparent w-90 rounded-lg border-2 border-[#1484da] text-black"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         required
