@@ -33,8 +33,8 @@ function ProductCard() {
                 </div>
 
                 <div className="flex flex-wrap -m-4">
-                    {product.filter((obj) => obj.title.toLowerCase().includes(searchkey))
-                        .filter((obj) => obj.category.toLowerCase().includes(filterType))
+                    {product.filter((obj) => obj.title.includes(searchkey))
+                        .filter((obj) => obj.category.includes(filterType))
                         .filter((obj) => obj.price.includes(filterPrice)).map((item, index)=>{
                         const { title, price,  imageUrl, id } = item;
                         return(
@@ -49,7 +49,7 @@ function ProductCard() {
                                         {/* <p className="leading-relaxed mb-3">{item.description.}</p> */}
                                         <p className="leading-relaxed mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>{price} COP</p>
                                         <div className=" flex justify-center" >
-                                            <button type="button" onClick={()=> addCart(item)} className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
+                                            <button type="button" onClick={()=> addCart(item)} className="focus:outline-none text-white bg-pink-600 hover:bg-pink-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Añadir al Carro</button>
                                         </div>
                                     </div>
                                 </div>

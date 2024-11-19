@@ -6,6 +6,8 @@ import { FiSun } from "react-icons/fi";
 import myContext from "../../context/data/myContext";
 import { RxCross2 } from "react-icons/rx";
 import { useSelector } from "react-redux";
+import imgcol from "./img/colombiaflag.png"
+import userimg from "./img/user.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -72,7 +74,7 @@ export default function Navbar() {
                     className="text-sm font-medium text-gray-900 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    All Products
+                    Todos los productos
                   </Link>
                   <div className="flow-root">
                     <Link
@@ -80,7 +82,7 @@ export default function Navbar() {
                       style={{ color: mode === "dark" ? "white" : "" }}
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
-                      Order
+                      Ordenes
                     </Link>
                   </div>
 
@@ -104,7 +106,7 @@ export default function Navbar() {
                       className="text-sm font-medium text-gray-700 cursor-pointer  "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
-                      Log Out
+                      Cerrar Sesión
                     </a></Link>
                     </div>
                   ) : (
@@ -117,7 +119,7 @@ export default function Navbar() {
                     >
                       <img
                         className="inline-block w-10 h-10 rounded-full"
-                        src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+                        src={userimg}
                         alt="Dan_Abromov"
                       />{" "}
                     </Link>
@@ -127,7 +129,7 @@ export default function Navbar() {
                 <div className="border-t border-gray-200 px-4 py-6">
                   <a href="#" className="-m-2 flex items-center p-2">
                     <img
-                      src="img/indiaflag.png"
+                      src={imgcol}
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
@@ -177,7 +179,7 @@ export default function Navbar() {
                   color: mode === "dark" ? "white" : "",
                 }}
               >
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">Abrir Menú</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -215,14 +217,14 @@ export default function Navbar() {
                     className="text-sm font-medium text-gray-700 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    All Products
+                    Todos los productos
                   </Link>
                   <Link
                     to={"/order"}
                     className="text-sm font-medium text-gray-700 "
                     style={{ color: mode === "dark" ? "white" : "" }}
                   >
-                    Order
+                    Ordenes
                   </Link>
 
                   {user?.user?.email === "ggwell593@gmail.com" ? (
@@ -242,7 +244,7 @@ export default function Navbar() {
                       className="text-sm font-medium text-gray-700 cursor-pointer  "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
-                      Log Out
+                      Cerrar Sesión
                     </a></Link>
                     
                   ) : (
@@ -251,7 +253,7 @@ export default function Navbar() {
                       className="text-sm font-medium text-gray-700 cursor-pointer  "
                       style={{ color: mode === "dark" ? "white" : "" }}
                     >
-                      Sign Up
+                      Registrarme
                     </Link>
                   )}
                 </div>
@@ -259,7 +261,7 @@ export default function Navbar() {
                 <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
-                      src=""
+                      src={imgcol}
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
@@ -275,7 +277,7 @@ export default function Navbar() {
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-10 h-10 rounded-full"
-                      src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+                      src={userimg}
                       alt="Dan_Abromov"
                     />
                   </a>

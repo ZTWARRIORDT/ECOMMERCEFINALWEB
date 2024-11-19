@@ -49,7 +49,7 @@ function DashboardTab() {
               <Tab>
                 <button
                   type="button"
-                  className="font-medium border-b-2 border-green-500 bg-[#605d5d12] text-green-500 rounded-lg text-xl  hover:shadow-green-700 shadow-[inset_0_0_8px_rgba(0,0,0,0.6)]   px-5 py-1.5 text-center "
+                  className="font-medium border-b-2 border-blue-500 bg-[#605d5d12] text-blue-500 rounded-lg text-xl  hover:shadow-blue-700 shadow-[inset_0_0_8px_rgba(0,0,0,0.6)]   px-5 py-1.5 text-center "
                 >
                   <div className="flex gap-2 items-center">
                     <FaUser /> Users
@@ -70,7 +70,7 @@ function DashboardTab() {
                   <Link to={"/addproduct"}>
                     <button
                       type="button"
-                      className="focus:outline-none text-white bg-pink-600 shadow-[inset_0_0_10px_rgba(0,0,0,0.6)] border hover:bg-pink-700 outline-0 font-medium rounded-lg text-sm px-5 py-2.5 mb-2"
+                      className="focus:outline-none text-white bg-pink-600 shadow-[inset_0_0_10px_rgba(0,0,0,0.6)] border hover:bg-blue-700 outline-0 font-medium rounded-lg text-sm px-5 py-2.5 mb-2"
                       style={{
                         backgroundColor: mode === "dark" ? "rgb(46 49 55)" : "",
                         color: mode === "dark" ? "white" : "",
